@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cephfix.com/sitemap.xml
