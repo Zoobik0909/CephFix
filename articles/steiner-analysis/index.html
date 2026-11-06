@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Анализ ТРГ по Steiner: точки, параметры и нормы — CephFix</title>
+<meta name="description" content="Анализ боковой ТРГ по Steiner: точки S, N, A, B, параметры SNA, SNB, ANB, положение резцов, нормы со ссылками и типичные ошибки.">
+<link rel="canonical" href="https://cephfix.com/articles/steiner-analysis/">
+<link rel="alternate" hreflang="ru" href="https://cephfix.com/articles/steiner-analysis/">
+<link rel="alternate" hreflang="en" href="https://cephfix.com/en/articles/steiner-analysis/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="CephFix">
+<meta property="og:title" content="Анализ ТРГ по Steiner: точки, параметры и нормы">
+<meta property="og:description" content="Анализ боковой ТРГ по Steiner: точки S, N, A, B, параметры SNA, SNB, ANB, положение резцов, нормы со ссылками и типичные ошибки.">
+<meta property="og:url" content="https://cephfix.com/articles/steiner-analysis/">
+<meta property="og:image" content="https://cephfix.com/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#1d3a40">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="/articles/article.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Анализ ТРГ по Steiner: точки, параметры и нормы", "description": "Анализ боковой ТРГ по Steiner: точки S, N, A, B, параметры SNA, SNB, ANB, положение резцов, нормы со ссылками и типичные ошибки.", "inLanguage": "ru", "datePublished": "2026-11-07", "dateModified": "2026-11-07", "mainEntityOfPage": "https://cephfix.com/articles/steiner-analysis/", "image": "https://cephfix.com/og-image.jpg", "author": {"@type": "Organization", "name": "CephFix", "url": "https://cephfix.com/"}, "publisher": {"@type": "Organization", "name": "CephFix", "url": "https://cephfix.com/", "logo": {"@type": "ImageObject", "url": "https://cephfix.com/favicon-192.png"}}}</script>
+</head>
+<body>
+<header class="top"><div class="wrap topin">
+  <a class="brand" href="/"><img src="/favicon-96.png" alt="">CephFix</a>
+  <nav class="nav">
+    <a href="/articles/">Статьи</a>
+    <div class="lang" role="group" aria-label="Язык / Language"><a href="/articles/steiner-analysis/" aria-current="true" data-lang="ru">RU</a><a href="/en/articles/steiner-analysis/" hreflang="en" data-lang="en">EN</a></div>
+    <a class="btn btn-p" href="/">О программе</a>
+  </nav>
+</div></header>
+<main class="wrap art">
+  <nav class="crumbs"><a href="/">CephFix</a> / <a href="/articles/">Статьи</a></nav>
+  <article>
+    <h1>Анализ ТРГ по Steiner: точки, параметры и нормы</h1>
+    <p class="meta"><time datetime="2026-11-07">7 ноября 2026</time> · 6 мин чтения</p>
+<p>Анализ по Steiner — одна из самых распространённых цефалометрических методик. Его часто изучают первым: параметров немного, они логично связаны, а результат сразу показывает, как соотносятся челюсти и зубы. В этой статье — откуда взялся анализ, какие точки нужны, что измеряет каждый параметр, какие нормы приводят источники и где анализ может ошибаться.</p>
+<h2>Откуда взялся анализ</h2>
+<p>Американский ортодонт Сесил Стайнер (Cecil C. Steiner) описал свой метод в работе «Cephalometrics for You and Me» (1953), затем развил его в «Cephalometrics in Clinical Practice» (1959) и «Use of Cephalometrics as an Aid to Planning and Assessing Orthodontic Treatment» (1960) [1]. Анализ состоит из трёх частей: скелетной (челюсти относительно черепа и друг друга), зубной (резцы относительно челюстей и друг друга) и мягкотканной (профиль нижней трети лица) [1].</p>
+<p>Главная идея Стайнера — взять за основу линию S–N (селла — назион), которая отражает переднюю часть основания черепа. Он выбрал её вместо франкфуртской горизонтали, потому что орбитальную точку и порион трудно надёжно найти на снимке [2].</p>
+<h2>Точки для анализа</h2>
+<p>Для скелетной и зубной части нужны следующие точки (определения — по [2]):</p>
+<ul>
+<li><strong>S (селла)</strong> — центр турецкого седла.</li>
+<li><strong>N (назион)</strong> — самая передняя точка лобно-носового шва.</li>
+<li><strong>A (субспинале)</strong> — наиболее вогнутая точка переднего контура верхней челюсти.</li>
+<li><strong>B (супраментале)</strong> — наиболее вогнутая точка переднего контура симфиза нижней челюсти.</li>
+<li><strong>Pog (погонион)</strong> — самая передняя точка симфиза.</li>
+<li><strong>Gn (гнатион)</strong> — точка на контуре симфиза между погонионом и ментоном.</li>
+<li><strong>Go (гонион)</strong> — самая задне-нижняя точка угла нижней челюсти.</li>
+<li><strong>Me (ментон)</strong> — самая нижняя точка симфиза.</li>
+<li>Режущие края и верхушки корней верхнего и нижнего резцов — для осей зубов.</li>
+</ul>
+<p>Из точек строят линии S–N, N–A, N–B, нижнечелюстную плоскость Go–Gn и окклюзионную плоскость. Для мягкотканной части нужна S-линия: она соединяет мягкотканный погонион с серединой S-образного изгиба нижнего контура носа [2].</p>
+<h2>Скелетные параметры</h2>
+<p><strong>SNA</strong> — угол между линиями S–N и N–A. Показывает, нормально ли расположена верхняя челюсть по сагиттали, выдвинута она или смещена назад. Норма — около 82° ± 2° [2].</p>
+<p><strong>SNB</strong> — угол между S–N и N–B; то же для нижней челюсти. Норма — около 80° ± 2° [2].</p>
+<p><strong>ANB</strong> — разница SNA и SNB, сагиттальное соотношение челюстей. Норма — около 2° ± 2°. ANB 4° и больше указывает на II скелетный класс, 0° и меньше — на III класс [2].</p>
+<p><strong>SND</strong> — угол между линиями S–N и N–D, где D — центр симфиза нижней челюсти. Норма 76° [3].</p>
+<p><strong>GoGn–SN</strong> — угол нижнечелюстной плоскости к S–N. Норма 32° [1][3]. По нему судят о типе роста: большой угол говорит о вертикальном типе, маленький — о горизонтальном [1].</p>
+<p><strong>Окклюзионная плоскость к SN</strong> — норма 14° [1][3].</p>
+<p><strong>S–L и S–E</strong> — расстояния по линии SN от точки S до проекций погониона (L) и заднего края мыщелка (E). Они характеризуют сагиттальное положение нижней челюсти. Нормы 51 мм и 22 мм [3].</p>
+<h2>Зубные параметры</h2>
+<p><strong>U1–NA</strong> — наклон и положение верхнего резца относительно линии N–A: угол оси зуба с линией и расстояние от линии до вестибулярной поверхности резца. Норма 22° и 4 мм [1][3].</p>
+<p><strong>L1–NB</strong> — то же для нижнего резца относительно N–B. Норма 25° и 4 мм [1][3].</p>
+<p><strong>Межрезцовый угол (U1–L1)</strong> — угол между осями верхнего и нижнего резцов. Норма около 130°: в разных таблицах встречаются значения 130° [1][4] и 131° [3][5].</p>
+<p><strong>Pog–NB</strong> — выступание подбородка впереди линии N–B. Стайнер оценивал его вместе с расстоянием от нижнего резца до N–B [1]; отдельную норму для Pog–NB источники приводят по-разному.</p>
+<h2>Мягкие ткани: S-линия</h2>
+<p>В идеале обе губы касаются S-линии [2]; в таблице [3] норма записана как 0 мм. Губы впереди линии считаются протрузивными [1].</p>
+<h2>Сводная таблица норм</h2>
+<div class="tbl"><table>
+<thead><tr><th>Параметр</th><th>Норма Steiner</th><th>Источник</th></tr></thead>
+<tbody>
+<tr><td>SNA</td><td>82° ± 2°</td><td>[2]</td></tr>
+<tr><td>SNB</td><td>80° ± 2°</td><td>[2]</td></tr>
+<tr><td>ANB</td><td>2° ± 2°</td><td>[2]</td></tr>
+<tr><td>SND</td><td>76°</td><td>[3]</td></tr>
+<tr><td>GoGn–SN</td><td>32°</td><td>[1], [3]</td></tr>
+<tr><td>Окклюзионная плоскость–SN</td><td>14°</td><td>[1], [3]</td></tr>
+<tr><td>U1–NA</td><td>22°; 4 мм</td><td>[1], [3]</td></tr>
+<tr><td>L1–NB</td><td>25°; 4 мм</td><td>[1], [3]</td></tr>
+<tr><td>U1–L1</td><td>130–131°</td><td>[1], [3], [4], [5]</td></tr>
+<tr><td>S–L / S–E</td><td>51 мм / 22 мм</td><td>[3]</td></tr>
+<tr><td>Губы — S-линия</td><td>0 мм (касаются)</td><td>[2], [3]</td></tr>
+</tbody>
+</table></div>
+<h2>Нормы — не догма: раса и возраст</h2>
+<p>Нормы Стайнера получены на европеоидной выборке, и для других групп они могут отличаться. Например, у 76 палестинских студентов с нормальным профилем скелетные углы почти совпали со Стайнером (SNA 81,9°, SNB 79,2°, GoGn–SN 31,7°). Зато резцы были заметно выдвинуты: U1–NA 6,9 мм и L1–NB 7,1 мм против 4 мм, межрезцовый угол 126,6°, окклюзионная плоскость 17° [5]. Иначе говоря, «протрузия» по таблице Стайнера может оказаться нормой для конкретной популяции. Поэтому пациента важно сравнивать с нормами его группы и возраста.</p>
+<h2>Где анализ может ошибаться</h2>
+<p>Слабое место — точка N. Она нестабильна в период роста: если N расположен кзади, ANB увеличивается, если кпереди — уменьшается [2]. Короткая или круто наклонённая линия S–N и ротация челюстей тоже искажают значения [2]. Поэтому ANB лучше проверять другими показателями сагиттали — например, Wits-анализом или APDI.</p>
+<p>Вторая частая ошибка — расстановка точек A и B. Это «самые вогнутые» точки контура, и их положение зависит от качества снимка и наклона головы. Ошибка на 1–2 мм сразу меняет SNA, SNB, ANB и положение резцов относительно NA и NB. Третья — линейные измерения без калибровки: миллиметры на цифровом снимке имеют смысл, только если известен масштаб.</p>
+<h2>Как читать результат</h2>
+<p>Сначала смотрят на скелет: ANB говорит о классе, а SNA и SNB — какая челюсть за него отвечает. GoGn–SN добавляет вертикальное измерение. Затем зубы: компенсируют ли резцы скелетное несоответствие своим наклоном. В конце — профиль по S-линии. Анализ Steiner не заменяет клинический осмотр и диагностические модели: это один из инструментов диагностики.</p>
+<h2>Как это считается в CephFix</h2>
+<p>В CephFix врач ставит точки на боковой ТРГ, а программа сама строит линии и считает параметры Steiner вместе с ещё восемью методиками. Каждое значение показывается рядом с нормой с учётом возраста, пола и этнического типа, а результат сохраняется в PDF-заключение.</p>
+<h2>Источники</h2>
+<p>Оригинальные работы: Steiner C. C. Cephalometrics for you and me. American Journal of Orthodontics, 1953; 39(10): 729–755. Steiner C. C. Cephalometrics in clinical practice. The Angle Orthodontist, 1959; 29(1): 8–29.</p>
+<ol>
+<li><a href="https://en.wikipedia.org/wiki/Cecil_C._Steiner">Cecil C. Steiner — Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Cephalometric_analysis">Cephalometric analysis — Wikipedia</a></li>
+<li><a href="https://www.medigraphic.com/files/ortodoncia/mo-2019/4/mo194d-T1.html">Revista Mexicana de Ortodoncia, 2019, табл. 1: значения Steiner</a></li>
+<li><a href="https://www.medigraphic.com/files/ortodoncia/mo-2020/2/mo202i-T1.html">Revista Mexicana de Ortodoncia, 2020, табл. 1</a></li>
+<li><a href="https://aaup.edu/sites/default/files/2017-07/wjo_11_4_Hussein_e1%5B1%5D.pdf">Hussein E., Al-Khateeb S., Abu Mowais M. Palestinians norms of Steiner cephalometric analysis. World J Orthod, 2010; 11(4)</a></li>
+</ol>
+  </article>
+  <aside class="promo">
+    <h2>Посчитайте ТРГ в CephFix</h2>
+    <p>CephFix считает 78 параметров по девяти методикам, подбирает нормы по возрасту и готовит PDF-заключение. Работает без интернета, первые 7 дней — бесплатно.</p>
+    <a class="btn btn-p" href="/">Подробнее о программе</a>
+  </aside>
+</main>
+<footer><div class="wrap foot">
+  <div>CephFix · 2026</div>
+  <nav><a href="/">Главная</a><a href="/articles/">Статьи</a><a href="mailto:info@cephfix.com">info@cephfix.com</a></nav>
+</div></footer>
+<script>document.querySelectorAll(".lang a").forEach(function(a){a.addEventListener("click",function(){try{localStorage.setItem("cephfix_lang",a.getAttribute("data-lang"))}catch(e){}})});</script>
+</body>
+</html>
