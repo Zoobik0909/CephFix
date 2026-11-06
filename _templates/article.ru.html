@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{{TITLE}} — CephFix</title>
+<meta name="description" content="{{DESC}}">
+<link rel="canonical" href="https://cephfix.com/articles/{{SLUG}}/">
+<link rel="alternate" hreflang="ru" href="https://cephfix.com/articles/{{SLUG}}/">
+<link rel="alternate" hreflang="en" href="https://cephfix.com/en/articles/{{SLUG}}/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="CephFix">
+<meta property="og:title" content="{{TITLE}}">
+<meta property="og:description" content="{{DESC}}">
+<meta property="og:url" content="https://cephfix.com/articles/{{SLUG}}/">
+<meta property="og:image" content="https://cephfix.com/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#1d3a40">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="/articles/article.css">
+<script type="application/ld+json">{{JSONLD}}</script>
+</head>
+<body>
+<header class="top"><div class="wrap topin">
+  <a class="brand" href="/"><img src="/favicon-96.png" alt="">CephFix</a>
+  <nav class="nav">
+    <a href="/articles/">Статьи</a>
+    <div class="lang" role="group" aria-label="Язык / Language"><a href="/articles/{{SLUG}}/" aria-current="true" data-lang="ru">RU</a><a href="/en/articles/{{SLUG}}/" hreflang="en" data-lang="en">EN</a></div>
+    <a class="btn btn-p" href="/">О программе</a>
+  </nav>
+</div></header>
+<main class="wrap art">
+  <nav class="crumbs"><a href="/">CephFix</a> / <a href="/articles/">Статьи</a></nav>
+  <article>
+    <h1>{{TITLE}}</h1>
+    <p class="meta"><time datetime="{{DATE}}">{{DATE_HUMAN}}</time> · {{READ_MIN}} мин чтения</p>
+{{BODY}}
+  </article>
+  <aside class="promo">
+    <h2>Посчитайте ТРГ в CephFix</h2>
+    <p>CephFix считает 78 параметров по девяти методикам, подбирает нормы по возрасту и готовит PDF-заключение. Работает без интернета, первые 7 дней — бесплатно.</p>
+    <a class="btn btn-p" href="/">Подробнее о программе</a>
+  </aside>
+</main>
+<footer><div class="wrap foot">
+  <div>CephFix · 2026</div>
+  <nav><a href="/">Главная</a><a href="/articles/">Статьи</a><a href="mailto:info@cephfix.com">info@cephfix.com</a></nav>
+</div></footer>
+<script>document.querySelectorAll(".lang a").forEach(function(a){a.addEventListener("click",function(){try{localStorage.setItem("cephfix_lang",a.getAttribute("data-lang"))}catch(e){}})});</script>
+</body>
+</html>
