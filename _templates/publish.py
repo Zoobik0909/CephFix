@@ -17,6 +17,8 @@ article.json:
 blockquote code sup sub br hr abbr. Без скриптов, стилей, картинок и атрибутов on*.
 
 Скрипт создаёт articles/<slug>/index.html и en/articles/<slug>/index.html,
+квадратные карточки articles/<slug>/card.jpg и en/articles/<slug>/card.jpg
+(для Instagram, LinkedIn и превью ссылок),
 добавляет статью в оба списка статей, в sitemap.xml и (один раз) ссылку
 «Статьи» в меню главной страницы. Других файлов не трогает.
 """
@@ -125,7 +127,7 @@ def render(lang, slug, d, title, desc, body, words, today):
         '@context': 'https://schema.org', '@type': 'Article',
         'headline': title, 'description': desc, 'inLanguage': lang,
         'datePublished': d.isoformat(), 'dateModified': today.isoformat(),
-        'mainEntityOfPage': SITE + path, 'image': SITE + '/og-image.jpg',
+        'mainEntityOfPage': SITE + path, 'image': SITE + path + 'card.jpg',
         'author': {'@type': 'Organization', 'name': 'CephFix', 'url': SITE + '/'},
         'publisher': {'@type': 'Organization', 'name': 'CephFix', 'url': SITE + '/',
                       'logo': {'@type': 'ImageObject', 'url': SITE + '/favicon-192.png'}},
@@ -211,6 +213,14 @@ def main():
         f.parent.mkdir(parents=True, exist_ok=True)
         f.write_text(page, encoding='utf-8')
         changed.append(str(f.relative_to(ROOT)))
+        card_file = f.parent / 'card.jpg'
+        try:
+            sys.path.insert(0, str(TPL))
+            from card import make_card
+            make_card(lang, title, desc, card_file, ROOT / 'favicon-192.png')
+            changed.append(str(card_file.relative_to(ROOT)))
+        except Exception as e:  # карточка — не повод срывать публикацию статьи
+            print(f'ВНИМАНИЕ: карточка {lang} не создана: {e}')
         lst = ROOT / ('articles' if lang == 'ru' else 'en/articles') / 'index.html'
         update_list(lst, path, title, desc, d, lang)
         changed.append(str(lst.relative_to(ROOT)))
