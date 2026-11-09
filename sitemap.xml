@@ -6,11 +6,11 @@
   </url>
   <url>
     <loc>https://cephfix.com/articles/</loc>
-    <lastmod>2026-11-07</lastmod>
+    <lastmod>2026-11-09</lastmod>
   </url>
   <url>
     <loc>https://cephfix.com/en/articles/</loc>
-    <lastmod>2026-11-07</lastmod>
+    <lastmod>2026-11-09</lastmod>
   </url>
   <url>
     <loc>https://cephfix.com/articles/steiner-analysis/</loc>
@@ -19,5 +19,13 @@
   <url>
     <loc>https://cephfix.com/en/articles/steiner-analysis/</loc>
     <lastmod>2026-11-07</lastmod>
+  </url>
+  <url>
+    <loc>https://cephfix.com/articles/ricketts-analysis/</loc>
+    <lastmod>2026-11-09</lastmod>
+  </url>
+  <url>
+    <loc>https://cephfix.com/en/articles/ricketts-analysis/</loc>
+    <lastmod>2026-11-09</lastmod>
   </url>
 </urlset>
