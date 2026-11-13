@@ -6,11 +6,11 @@
   </url>
   <url>
     <loc>https://cephfix.com/articles/</loc>
-    <lastmod>2026-11-09</lastmod>
+    <lastmod>2026-11-13</lastmod>
   </url>
   <url>
     <loc>https://cephfix.com/en/articles/</loc>
-    <lastmod>2026-11-09</lastmod>
+    <lastmod>2026-11-13</lastmod>
   </url>
   <url>
     <loc>https://cephfix.com/articles/steiner-analysis/</loc>
@@ -27,5 +27,13 @@
   <url>
     <loc>https://cephfix.com/en/articles/ricketts-analysis/</loc>
     <lastmod>2026-11-09</lastmod>
+  </url>
+  <url>
+    <loc>https://cephfix.com/articles/mcnamara-analysis/</loc>
+    <lastmod>2026-11-13</lastmod>
+  </url>
+  <url>
+    <loc>https://cephfix.com/en/articles/mcnamara-analysis/</loc>
+    <lastmod>2026-11-13</lastmod>
   </url>
 </urlset>
