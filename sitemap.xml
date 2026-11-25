@@ -6,11 +6,11 @@
   </url>
   <url>
     <loc>https://cephfix.com/articles/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
     <loc>https://cephfix.com/en/articles/</loc>
-    <lastmod>2026-11-23</lastmod>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
     <loc>https://cephfix.com/articles/steiner-analysis/</loc>
@@ -67,5 +67,13 @@
   <url>
     <loc>https://cephfix.com/en/articles/kim-apdi-odi/</loc>
     <lastmod>2026-11-23</lastmod>
+  </url>
+  <url>
+    <loc>https://cephfix.com/articles/schwarz-analysis/</loc>
+    <lastmod>2026-11-25</lastmod>
+  </url>
+  <url>
+    <loc>https://cephfix.com/en/articles/schwarz-analysis/</loc>
+    <lastmod>2026-11-25</lastmod>
   </url>
 </urlset>
