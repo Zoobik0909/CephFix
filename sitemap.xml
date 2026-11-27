@@ -6,11 +6,11 @@
   </url>
   <url>
     <loc>https://cephfix.com/articles/</loc>
-    <lastmod>2026-11-25</lastmod>
+    <lastmod>2026-11-27</lastmod>
   </url>
   <url>
     <loc>https://cephfix.com/en/articles/</loc>
-    <lastmod>2026-11-25</lastmod>
+    <lastmod>2026-11-27</lastmod>
   </url>
   <url>
     <loc>https://cephfix.com/articles/steiner-analysis/</loc>
@@ -75,5 +75,13 @@
   <url>
     <loc>https://cephfix.com/en/articles/schwarz-analysis/</loc>
     <lastmod>2026-11-25</lastmod>
+  </url>
+  <url>
+    <loc>https://cephfix.com/articles/wits-appraisal/</loc>
+    <lastmod>2026-11-27</lastmod>
+  </url>
+  <url>
+    <loc>https://cephfix.com/en/articles/wits-appraisal/</loc>
+    <lastmod>2026-11-27</lastmod>
   </url>
 </urlset>
